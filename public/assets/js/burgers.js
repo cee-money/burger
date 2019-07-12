@@ -39,4 +39,16 @@ $(function() {
       }
     );
   });
+
+  $(".delete-burger").on("click", function(){
+    var id =  $(this).data("id");
+
+    $.ajax({
+      method: "DELETE",
+      url: `/api/burgers/${id}`
+    }).then(function() {
+        console.log(`Deleted burger with id ${id}`);
+        location.reload();
+    })
+  });
 });

@@ -2,7 +2,9 @@
 	{{burger_name}}&nbsp;&nbsp; 
 
 	<button type="button" class="btn btn-outline-danger btn-sm change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devour}}DEVOUR IT!{{else}}UN-DEVOUR?{{/if}}
+		{{#if devour}}DEVOUR!{{else}}REORDER?{{/if}}
 	</button>
+	&nbsp;
+	<button type="button" class="btn btn-outline-danger btn-sm delete-burger" data-id="{{id}}">DELETE</button>
 
 </li>

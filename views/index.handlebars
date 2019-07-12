@@ -50,6 +50,7 @@
       <h1 class="display-4 text-center">Devoured</h1>
       <ul class="list-group"><h6>
         {{#each burgers}}
+         <br>
           {{#if devoured}}
             {{> burgers/burger-block devour=false}}
           {{/if}}
