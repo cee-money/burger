@@ -21,8 +21,8 @@
         <form class="create-form">
 
         <div class="form-group">
-          <label for="burg">Burger Name:</label>
-          <input class="border border-danger" type="text" id="burg" name="name">
+          <label for="burger">Burger Name:</label>
+          <input class="border border-danger" type="text" id="burger" name="name">
         </div>
 
         <button type="submit" class="btn btn-outline-warning btn-sm mx-auto">ADD BURGER</button>
@@ -36,7 +36,7 @@
 <div class="container">
   <div class="row">
     <div class="col-6 text-warning border-right border-danger">
-      <h1 class="display-4 text-center">Burgers</h1>
+      <h1 class="display-4 text-center">Burger Menu</h1>
       <ul class="list-group"><h6>
         {{#each burgers}}
         <br>
@@ -47,7 +47,7 @@
       </h6></ul>
     </div>
     <div class="col-6 text-warning">
-      <h1 class="display-4 text-center">Devoured Burgers</h1>
+      <h1 class="display-4 text-center">Devoured</h1>
       <ul class="list-group"><h6>
         {{#each burgers}}
           {{#if devoured}}
