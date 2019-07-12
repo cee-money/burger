@@ -40,12 +40,12 @@ $(function() {
     );
   });
 
-  $(".delete-burger").on("click", function(){
+  $(".list-group-item").on("click", "#delete", function(){
     var id =  $(this).data("id");
 
     $.ajax({
       method: "DELETE",
-      url: `/api/burgers/${id}`
+      url: `/api/burgers/delete/${id}`
     }).then(function() {
         console.log(`Deleted burger with id ${id}`);
         location.reload();
